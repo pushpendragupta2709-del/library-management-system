@@ -272,6 +272,27 @@
             background: #1264c5;
         }
 
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .reset-btn {
+            width: fit-content;
+            background: #d9534f;
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .reset-btn:hover {
+            background: #b52b27;
+        }
+
         /* ================= CONNECT WITH ME ================= */
 
         .connect-with-me {
@@ -660,12 +681,23 @@
                         required
                     ></textarea>
 
-                    <button
-                        type="submit"
-                        class="submit-btn"
-                    >
-                        Send Message
-                    </button>
+                    <div class="button-group">
+
+                        <button
+                            type="submit"
+                            class="submit-btn"
+                        >
+                            Send Message
+                        </button>
+
+                        <button
+                            type="reset"
+                            class="reset-btn"
+                        >
+                            Reset
+                        </button>
+
+                    </div>
 
                 </form>
 
